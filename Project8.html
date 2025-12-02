@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ishita Photography</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff7eb3, #ff758c);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .sub {
+      font-style: italic;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #ff99ad;
+      margin: 30px 0;
+    }
+
+    /* ABOUT */
+    .about {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+      margin: 0 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .about img {
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #ff4e6a;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .portfolio img {
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+
+    /* TABLE */
+    table {
+      width: 70%;
+      margin: auto;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    th {
+      background: #ff4e6a;
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* FORM */
+    form table {
+      box-shadow: none;
+      width: 50%;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #ff4e6a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e63a55;
+      transform: scale(1.05);
+    }
+
+    /* CONTACT */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background: #ffe6ea;
+      border-top: 2px solid #ffb3c6;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <h1>📸 ISHITA PHOTOGRAPHY 📸</h1>
+  <p class="sub">Capturing moments, one frame at a time.</p>
+</header>
+
+<hr>
+
+<div class="about">
+  
+  <div>
+    <h2>About Ishita</h2>
+    <p>I am Ishita — a freelance photographer specializing in portraits, weddings,
+    and nature photography. I love natural light and candid moments.</p>
+  </div>
+</div>
+
+<hr>
+
+<h2 style="text-align:center;">🖼 Portfolio</h2>
+<div class="portfolio">
+  <img src="images/portrait.jpeg" width="200">
+  <img src="images/wedding.jpeg" width="400">
+  <img src="images/nature.jpeg" width="200">
+</div>
+
+<hr>
+
+<h2 style="text-align:center;">📷 Services & Prices</h2>
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Duration</th>
+    <th>Price</th>
+  </tr>
+  <tr><td>Portrait Session</td><td>1 hour</td><td>₹1,499</td></tr>
+  <tr><td>Wedding Coverage</td><td>Full Day</td><td>₹25,000</td></tr>
+  <tr><td>Event Photography</td><td>4 hours</td><td>₹6,999</td></tr>
+</table>
+
+<hr>
+
+<h2 style="text-align:center;">📩 Book a Session (Mock)</h2>
+<form onsubmit="alert('Booking request sent (mock). I will contact you soon!'); return false;">
+  <table>
+    <tr><td>Name:</td><td><input type="text" required></td></tr>
+    <tr><td>Phone:</td><td><input type="tel" required></td></tr>
+    <tr><td>Service:</td>
+      <td>
+        <select>
+          <option>Portrait Session</option>
+          <option>Wedding Coverage</option>
+          <option>Event Photography</option>
+        </select>
+      </td>
+    </tr>
+    <tr><td>Date:</td><td><input type="date" required></td></tr>
+    <tr><td colspan="2" style="text-align:center;"><button type="submit">Request Booking</button></td></tr>
+  </table>
+</form>
+
+<footer>
+  <h2>📞 Contact</h2>
+  <p>Phone: 99887 77665</p>
+  <p>Email: ishiphoto@gmail.com</p>
+  <p>© 2025 Ishita Photography</p>
+</footer>
+
+</body>
+</html>
